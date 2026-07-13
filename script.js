@@ -87,3 +87,39 @@ Coming in the next update...
 `;
 
 }
+#hearts{
+position:fixed;
+left:0;
+top:0;
+width:100%;
+height:100%;
+overflow:hidden;
+pointer-events:none;
+z-index:1;
+}
+
+.heart{
+position:absolute;
+font-size:22px;
+animation:floatHeart linear forwards;
+opacity:.9;
+}
+
+@keyframes floatHeart{
+
+0%{
+transform:translateY(100vh) scale(.8);
+opacity:0;
+}
+
+15%{
+opacity:1;
+}
+
+100%{
+transform:translateY(-120px) scale(1.4);
+opacity:0;
+}
+
+}
+
