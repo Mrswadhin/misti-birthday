@@ -1,75 +1,89 @@
-function start() {
+const loading = document.getElementById("loading");
 
-    document.querySelector(".overlay").innerHTML = `
+setTimeout(() => {
+    loading.style.display = "none";
+}, 3000);
 
-    <h1>💛 Happy Birthday Misti 💛</h1>
+const startBtn = document.getElementById("startBtn");
 
-    <p style="font-size:22px;
-    color:#444;
-    margin-top:20px;
-    line-height:1.8;">
+startBtn.addEventListener("click", () => {
 
-    Every beautiful moment becomes even more beautiful
-    because you are a part of it.
+document.querySelector(".glass").innerHTML = `
 
-    <br><br>
+<h2 style="font-family:'Great Vibes',cursive;font-size:45px;color:#d4a000;">
+For You 💛
+</h2>
 
-    Today is your day...
+<p style="margin-top:25px;font-size:22px;line-height:1.8;">
 
-    <br>
+Every heartbeat...
 
-    Enjoy every smile,
-    every blessing,
-    every moment.
+Every smile...
 
-    <br><br>
+Every beautiful memory...
 
-    ❤️ A Special Surprise is Coming... ❤️
+reminds me how special you are.
 
-    </p>
+✨
 
-    <br>
+Today isn't just your birthday.
 
-    <button onclick="nextPage()">Continue ➜</button>
+It's a celebration of your existence.
 
-    `;
+💛
 
-}
+</p>
+
+<br>
+
+<button onclick="nextPage()">
+
+Continue ➜
+
+</button>
+
+`;
+
+});
 
 function nextPage(){
 
-    document.querySelector(".overlay").innerHTML=`
+document.querySelector(".glass").innerHTML=`
 
-    <h1>Coming Soon...✨</h1>
+<h2 style="font-family:'Great Vibes',cursive;color:#d4a000;">
 
-    <p style="font-size:22px;
-    line-height:1.8;
-    color:#444;">
+Project MISTI 💛
 
-    Photo Gallery 📸
+</h2>
 
-    <br>
+<p style="font-size:21px;line-height:1.8;">
 
-    Beautiful Letter 💌
+Coming in the next update...
 
-    <br>
+📸 Premium Photo Gallery
 
-    Birthday Cake 🎂
+💌 Romantic Letter
 
-    <br>
+🎂 Birthday Cake
 
-    Gift Box 🎁
+🎁 Gift Box
 
-    <br>
+🎥 Surprise Video
 
-    Surprise Video 🎥
+✨ Fireworks
 
-    <br><br>
+🌹 Rose Animation
 
-    <b>— Swadhin da 💙</b>
+</p>
 
-    </p>
+<br>
 
-    `;
+<h3>
+
+— Swadhin da 💙
+
+</h3>
+
+`;
 
 }
