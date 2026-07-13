@@ -113,3 +113,44 @@ function createHeart() {
 }
 
 setInterval(createHeart, 500);
+// ===== Photo Gallery =====
+
+const photos = [
+
+"https://images.unsplash.com/photo-1516589178581-6cd7833ae3b2?w=900",
+
+"https://images.unsplash.com/photo-1517841905240-472988babdf9?w=900",
+
+"https://images.unsplash.com/photo-1524504388940-b1c1722653e1?w=900"
+
+];
+
+let currentPhoto = 0;
+
+const slideImage = document.getElementById("slideImage");
+
+if(slideImage){
+
+setInterval(()=>{
+
+currentPhoto++;
+
+if(currentPhoto >= photos.length){
+
+currentPhoto = 0;
+
+}
+
+slideImage.style.opacity="0";
+
+setTimeout(()=>{
+
+slideImage.src = photos[currentPhoto];
+
+slideImage.style.opacity="1";
+
+},400);
+
+},2000);
+
+}
