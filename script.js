@@ -87,39 +87,29 @@ Coming in the next update...
 `;
 
 }
-#hearts{
-position:fixed;
-left:0;
-top:0;
-width:100%;
-height:100%;
-overflow:hidden;
-pointer-events:none;
-z-index:1;
+// ===== Floating Yellow Hearts =====
+
+const hearts = document.getElementById("hearts");
+
+function createHeart() {
+
+    const heart = document.createElement("div");
+
+    heart.className = "heart";
+
+    heart.innerHTML = "💛";
+
+    heart.style.left = Math.random() * 100 + "vw";
+
+    heart.style.animationDuration = (4 + Math.random() * 4) + "s";
+
+    heart.style.fontSize = (18 + Math.random() * 20) + "px";
+
+    hearts.appendChild(heart);
+
+    setTimeout(() => {
+        heart.remove();
+    }, 8000);
 }
 
-.heart{
-position:absolute;
-font-size:22px;
-animation:floatHeart linear forwards;
-opacity:.9;
-}
-
-@keyframes floatHeart{
-
-0%{
-transform:translateY(100vh) scale(.8);
-opacity:0;
-}
-
-15%{
-opacity:1;
-}
-
-100%{
-transform:translateY(-120px) scale(1.4);
-opacity:0;
-}
-
-}
-
+setInterval(createHeart, 500);
