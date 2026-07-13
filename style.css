@@ -175,3 +175,29 @@ border-radius:15px;
 display:block;
 transition:1s;
 }
+/* ===== Premium Gallery Animation ===== */
+
+.slider{
+overflow:hidden;
+}
+
+.slider img{
+animation:zoomPhoto 8s ease-in-out infinite;
+transition:opacity .6s ease;
+}
+
+@keyframes zoomPhoto{
+
+0%{
+transform:scale(1);
+}
+
+50%{
+transform:scale(1.08);
+}
+
+100%{
+transform:scale(1);
+}
+
+}
