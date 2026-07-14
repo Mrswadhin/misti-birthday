@@ -46,7 +46,25 @@ Continue ➜
 
 });
 
-function nextPage(){
+function nextPage(){<p style="font-size:21px;line-height:1.8;">
+
+Coming in the next update...
+
+📸 Premium Photo Gallery
+
+💌 Romantic Letter
+
+🎂 Birthday Cake
+
+🎁 Gift Box
+
+🎥 Surprise Video
+
+✨ Fireworks
+
+🌹 Rose Animation
+
+</p>
 
 document.querySelector(".glass").innerHTML=`
 
