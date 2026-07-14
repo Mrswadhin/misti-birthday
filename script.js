@@ -154,3 +154,30 @@ slideImage.style.opacity="1";
 },2000);
 
 }
+
+function typeWriter(text, element, speed = 35) {
+
+    let i = 0;
+
+    element.innerHTML = "";
+
+    function typing() {
+
+        if (i < text.length) {
+
+            if (text.charAt(i) === "\n") {
+                element.innerHTML += "<br>";
+            } else {
+                element.innerHTML += text.charAt(i);
+            }
+
+            i++;
+
+            setTimeout(typing, speed);
+        }
+
+    }
+
+    typing();
+
+}
