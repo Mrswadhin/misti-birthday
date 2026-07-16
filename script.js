@@ -39,27 +39,23 @@ function blowCandle(){
 document.getElementById("flame").style.display="none";
 
 document.body.innerHTML = `
-
 <div class="screen">
 
-<h1>🎉 Happy Birthday Misti 💛</h1>
+<h1>💌 A Letter For You</h1>
 
-<div id="fireworks">
+<div id="letterBox">
 
-✨ 🎆 ✨ 🎇 ✨ 🎆 ✨
-
-</div>
-
-<p>
-
-May your life always shine with happiness,
-
-love and countless beautiful moments. 💛
-
-</p>
+<p id="letterText"></p>
 
 </div>
 
+<button id="nextLetter">
+
+Open My Gift 🎁
+
+</button>
+
+</div>
 `;
 
 }
