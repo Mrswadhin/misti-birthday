@@ -38,6 +38,28 @@ function blowCandle(){
 
 document.getElementById("flame").style.display="none";
 
-alert("🎉 Happy Birthday Misti! 🎆");
+document.body.innerHTML = `
+
+<div class="screen">
+
+<h1>🎉 Happy Birthday Misti 💛</h1>
+
+<div id="fireworks">
+
+✨ 🎆 ✨ 🎇 ✨ 🎆 ✨
+
+</div>
+
+<p>
+
+May your life always shine with happiness,
+
+love and countless beautiful moments. 💛
+
+</p>
+
+</div>
+
+`;
 
 }
