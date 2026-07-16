@@ -56,6 +56,13 @@ Open My Gift 🎁
 </button>
 
 </div>
+
 `;
 
+  document.getElementById("nextLetter").addEventListener("click", () => {
+
+    alert("🎁 Gift Page - Coming Next!");
+
+});
+  
 }
