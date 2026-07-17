@@ -14,12 +14,25 @@ Make a wish and tap the candle...
 
 <div id="cake">
 
-<img
-id="cakeImage"
-src="https://i.imgur.com/9P4K8Yw.png"
-alt="Birthday Cake">
+<div class="cake">
 
-<div id="flame">🔥</div>
+<div class="candle">
+<div class="flame"></div>
+</div>
+
+<div class="icing"></div>
+
+<div class="layer top"></div>
+
+<div class="layer middle"></div>
+
+<div class="layer bottom"></div>
+
+</div>
+
+<button id="blowBtn">
+Blow Candle 🕯️
+</button>
 
 </div>
 
