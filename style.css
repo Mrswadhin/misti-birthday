@@ -100,3 +100,31 @@ opacity:.4;
 }
 
 }
+#cake{
+position:relative;
+width:260px;
+margin:30px auto;
+}
+
+#cakeImage{
+width:100%;
+display:block;
+}
+
+#flame{
+position:absolute;
+top:18px;
+left:50%;
+transform:translateX(-50%);
+font-size:30px;
+animation:flicker .8s infinite;
+}
+
+@keyframes flicker{
+0%,100%{
+transform:translateX(-50%) scale(1);
+}
+50%{
+transform:translateX(-50%) scale(1.15);
+}
+  }
