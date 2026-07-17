@@ -128,3 +128,85 @@ transform:translateX(-50%) scale(1);
 transform:translateX(-50%) scale(1.15);
 }
   }
+  /* ===== Premium 3D Cake ===== */
+
+.cake{
+position:relative;
+width:220px;
+height:220px;
+margin:30px auto;
+}
+
+.layer{
+position:absolute;
+left:50%;
+transform:translateX(-50%);
+border-radius:18px;
+box-shadow:0 8px 18px rgba(0,0,0,.18);
+}
+
+.bottom{
+bottom:0;
+width:220px;
+height:70px;
+background:linear-gradient(#ffb74d,#fb8c00);
+}
+
+.middle{
+bottom:55px;
+width:180px;
+height:60px;
+background:linear-gradient(#ffe082,#ffca28);
+}
+
+.top{
+bottom:105px;
+width:140px;
+height:50px;
+background:linear-gradient(#fff3e0,#ffe0b2);
+}
+
+.icing{
+position:absolute;
+left:50%;
+transform:translateX(-50%);
+bottom:145px;
+width:150px;
+height:18px;
+background:#fff;
+border-radius:20px;
+}
+
+.candle{
+position:absolute;
+left:50%;
+transform:translateX(-50%);
+bottom:163px;
+width:12px;
+height:45px;
+background:#ffffff;
+border-radius:6px;
+}
+
+.flame{
+position:absolute;
+top:-22px;
+left:50%;
+transform:translateX(-50%);
+width:16px;
+height:22px;
+background:gold;
+border-radius:50% 50% 50% 50%;
+box-shadow:0 0 18px orange;
+animation:flicker .8s infinite;
+}
+
+@keyframes flicker{
+0%,100%{
+transform:translateX(-50%) scale(1);
+}
+
+50%{
+transform:translateX(-50%) scale(1.15);
+}
+}
